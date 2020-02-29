@@ -1,0 +1,50 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	    ,{
+            "path" : "pages/shopping/shopping",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/me/me",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#bfbfbf",
+		"selectedColor":"#515151",
+		"borderStyle":"black",
+		"backgroundColor":"#ffffff",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"需求单",
+				"iconPath":"static/tabBarIco/need.png",
+				"selectedIconPath":"static/tabBarIco/need_sel.png"
+			},
+			{
+				"pagePath":"pages/shopping/shopping",
+				"text":"购物单",
+				"iconPath":"static/tabBarIco/shopping.png",
+				"selectedIconPath":"static/tabBarIco/shopping_sel.png"
+			},
+			{
+				"pagePath":"pages/me/me",
+				"text":"我的",
+				"iconPath":"static/tabBarIco/me.png",
+				"selectedIconPath":"static/tabBarIco/me_sel.png"
+			}
+		]
+	}
+}
