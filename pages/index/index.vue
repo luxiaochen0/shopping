@@ -1,14 +1,18 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+	<view class="">
+		
+		<uni-list>
+		    <uni-list-item title="2019东京" note="描述信息"></uni-list-item>
+		    <uni-list-item title="2018济州岛" note="描述信息"></uni-list-item>
+		</uni-list>
 	</view>
 </template>
 
 <script>
+	import {uniList,uniListItem} from '@dcloudio/uni-ui'
+	
 	export default {
+		components: {uniList,uniListItem},
 		data() {
 			return {
 				title: 'Hello'
@@ -24,29 +28,5 @@
 </script>
 
 <style lang="scss">
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+	
 </style>
