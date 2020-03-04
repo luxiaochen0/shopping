@@ -1,11 +1,13 @@
 <template>
-	<view class="">
-		
+	<view class="">		
 		<uni-list>
 		    <uni-list-item title="2019东京" note="描述信息"></uni-list-item>
 		    <uni-list-item title="2018济州岛" note="描述信息"></uni-list-item>
-		</uni-list>
-	</view>
+		</uni-list>		
+		<view class="">
+			{{title}}
+		</view>		
+	</view>	
 </template>
 
 <script>
@@ -15,7 +17,7 @@
 		components: {uniList,uniListItem},
 		data() {
 			return {
-				title: 'Hello'
+				title: this.$config.API
 			}
 		},
 		onLoad() {
